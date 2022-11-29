@@ -2,17 +2,16 @@
 
 <br>
 ## FEATURES OF THIS TODO APP
-<hr>
 <br>
 create todo's<br>
 complete the list by clicking<br>
 delete todo list<br>
 edit/update todo list<br>
 priority will be assigned to the last created list<br>
-
+<br><br>
 
 ## TECHNOLOGIES USED
-<hr><br>
+<br>
 REACT JS<br>
 FUNCTIONAL COMPONENTS<br>
 HOOKS - USESTATE,USEEFFECT,USEREF<br>
