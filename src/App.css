@@ -1,0 +1,263 @@
+/*
+
+#container
+{
+  border: none;
+  width: 900px;
+  height: 500px;
+  position: relative;
+  left: 280px;
+  top: 90px;
+  box-shadow: 10px 10px 50px;
+  border-radius: 20px;
+  /* background-image: url('./TODO Components/Nothing to do.png') cover; */
+  /* background: url('./TODO Components/Nothing to do.png'); */
+  /* object-fit: cover; 
+}
+#heading
+{
+  color: white;
+  font-size: 40px;
+}
+img
+{
+  width: 900px;
+  height: 440px;
+  object-fit: fill;
+  border-radius: 0px 0px 20px 20px;
+}
+header
+{
+  background-color: rgb(4, 4, 91);
+  height: 60px;
+  border-radius: 20px 20px 0px 0px;
+}
+.fa-plus
+{
+  font-size: 40px;
+  color: blue;
+} */
+header
+{
+  background-color: rgb(4, 4, 91);
+  height: 80px;
+  border-radius: 20px 20px 0px 0px;
+  padding-top: 12px;
+}
+#heading
+{
+  color: white;
+  font-size: 50px;
+}
+img
+{
+  width: 900px;
+  height: 440px;
+  object-fit: fill;
+  border-radius: 0px 0px 20px 20px;
+}
+.App {
+  text-align: center;
+  width: 900px;
+  height: max-content;
+  box-shadow: 10px 10px 50px;
+  position: relative;
+  left: 300px;
+  top: 50px;
+  padding-bottom: 100px;
+  border-radius: 20px;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+    'Lucida Sans', Arial, sans-serif;
+}
+
+/* body {
+  background: linear-gradient(
+    90deg,
+    rgba(48, 16, 255, 1) 0%,
+    rgba(100, 115, 255, 1) 100%
+  ); 
+
+} */
+.todo-app {
+  display: flex;
+  flex-direction: column;
+  width: 520px;
+  min-height: 600px;
+  background: #161a2b;
+  text-align: center;
+  margin: 128px auto;
+  border-radius: 10px;
+  padding-bottom: 32px;
+}
+
+h1 {
+  margin: 32px 0;
+  color: #3c456a;
+  font-size: 24px;
+}
+
+.complete {
+  text-decoration: line-through;
+  opacity: 0.4;
+}
+
+.todo-form {
+  margin-bottom: 32px;
+}
+
+.todo-input {
+  padding: 14px 32px 14px 16px;
+  border-radius: 6px;
+  border: 2px solid #5d0cff;
+  outline: none;
+  width: 320px;
+  background: transparent;
+  /* color: #fff; */
+  font-size: 20px;
+  box-shadow: 3px 3px 20px;
+}
+.input-date
+{
+  width: 200px;
+  height: 40px;
+  border-radius: 6px;
+  border: none;
+  font-size: 20px;
+  padding: 10px;
+  box-shadow: 3px 3px 20px;
+
+}
+.input-date::placeholder
+{
+  font-size: 20px;
+}
+.todo-input::placeholder {
+  color: #e2e2e2;
+}
+
+.todo-button {
+  padding: 16px;
+  border: none;
+  width: 120px;
+  border-radius: 10px;
+  cursor: pointer;
+  outline: none;
+  background: linear-gradient(
+    90deg,
+    rgba(93, 12, 255, 1) 0%,
+    rgba(155, 0, 250, 1) 100%
+  );
+  color: #fff;
+  text-transform: capitalize;
+}
+
+.todo-input.edit {
+  border: 2px solid #149fff;
+}
+
+.todo-button.edit {
+  background: linear-gradient(
+    90deg,
+    rgba(20, 159, 255, 1) 0%,
+    rgba(17, 122, 255, 1) 100%
+  );
+  padding: 16px 22px;
+}
+
+.todo-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+}
+
+.todo-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4px auto;
+  color: #fff;
+  text-shadow:1px 1px 5px #e2e2e2;
+  
+  background: linear-gradient(
+    90deg,
+    rgb(122, 55, 8) 0%,
+    rgb(242, 74, 8) 100%
+  );
+
+  padding: 16px;
+  border-radius: 5px;
+  width: 90%;
+  
+}
+
+.todo-row:nth-child(4n + 1) {
+  background: linear-gradient(
+    90deg,
+    rgb(151, 106, 241) 0%,
+    rgb(63, 6, 99) 100%
+  );
+}
+
+.todo-row:nth-child(4n + 2) {
+  background: linear-gradient(
+    90deg,
+    rgb(83, 7, 80) 0%,
+    rgb(234, 36, 141) 100%
+  );
+}
+
+.todo-row:nth-child(4n + 3) {
+  background: linear-gradient(
+    90deg,
+    rgb(20, 255, 90) 0%,
+    rgb(16, 55, 10) 100%
+  );
+}
+
+.icons {
+  display: flex;
+  align-items: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+
+.delete-icon {
+  margin-right: 5px;
+  color: #fff;
+}
+
+.edit-icon {
+  color: #fff;
+}
+#texthover
+{
+  position: relative;
+  /* border-bottom: 6px dotted black; */
+}
+#texthover::before
+{
+  content: attr(text-hover);
+  visibility: hidden;
+  opacity: 0;
+  width: max-content;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px 5px;
+  transition: opacity 1s ease-in-out;
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  top: 110%;
+}
+#texthover:hover::before
+{
+  opacity: 1;
+  visibility: visible;
+}
