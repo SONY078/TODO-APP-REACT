@@ -1,7 +1,7 @@
 # Getting Started with REACT TODO APP
 
-## FEATURES OF THIS TODO APP
 <br>
+## FEATURES OF THIS TODO APP
 <hr>
 <br>
 create todo's<br>
@@ -12,7 +12,7 @@ priority will be assigned to the last created list<br>
 
 
 ## TECHNOLOGIES USED
-<br><hr><br>
+<hr><br>
 REACT JS<br>
 FUNCTIONAL COMPONENTS<br>
 HOOKS - USESTATE,USEEFFECT,USEREF<br>
