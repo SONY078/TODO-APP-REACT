@@ -1,6 +1,6 @@
 # Getting Started with REACT TODO APP
 
-<br>
+
 ## FEATURES OF THIS TODO APP
 <br>
 create todo's<br>
